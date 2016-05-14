@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="80dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <!-- ViewPager每页GridView 的Item的布局 -->
+    <RelativeLayout
+        android:id="@+id/rl_user_avatar_container"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp">
+
+        <com.stark.gridviewindicator.CircleImageView
+            android:id="@+id/civ_user_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/test_avatar"
+            app:border_color="#FF000000"
+            app:border_width="0dp"/>
+
+        <com.stark.gridviewindicator.CircleImageView
+            android:id="@+id/civ_user_avatar_checked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/icon_common_selected"
+            android:visibility="gone"
+            app:border_color="#FF000000"
+            app:border_width="0dp"/>
+
+        <ImageView
+            android:id="@+id/iv_auth_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_public_page_discover_auth"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_gv_item_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_user_avatar_container"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:ellipsize="end"
+        android:maxEms="5"
+        android:singleLine="true"
+        android:text="NK"
+        android:textColor="#808080"/>
+
+
+</LinearLayout>

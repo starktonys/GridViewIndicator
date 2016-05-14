@@ -1,0 +1,203 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+    <!-- PagerSlidingTabStrip -->
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+        <attr name="pstsTabCountInScreen" format="integer" />
+        <attr name="selectedTabTextColor" format="color" />
+    </declare-styleable>
+
+
+    <!-- DynamicHeight -->
+    <declare-styleable name="DynamicHeightImageView">
+        <attr name="height_ratio" format="float" />
+    </declare-styleable>
+
+    <!-- PagerSlidingTabText -->
+    <declare-styleable name="PagerSlidingTabText">
+        <attr name="tabCornerRadius" format="integer"/>
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="tabPaddingTopBottom" format="dimension" />
+        <attr name="tabBackgroundColor" format="color" />
+        <attr name="tabSelectedBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+
+    <!-- MultiStatus ImageButton -->
+    <declare-styleable name="MultiStatusImageButton">
+        <attr name="statusDrawables" format="reference" />
+    </declare-styleable>
+
+    <!-- MaskedEdittext -->
+    <declare-styleable name="MaskedEditText">
+        <attr name="mask" format="string"/>
+        <attr name="notMaskedSymbol" format="string"/>
+        <attr name="replacementChar" format="string"/>
+        <attr name="deleteChar" format="string"/>
+        <attr name="format" format="string"/>
+        <attr name="maskIcon" format="reference"/>
+        <attr name="maskIconColor" format="reference"/>
+        <attr name="android:inputType"/>
+    </declare-styleable>
+
+    <!--glass view-->
+    <declare-styleable name="GlassView">
+        <attr name="downSampling" format="integer"/>
+        <attr name="blurRadius" format="float"/>
+    </declare-styleable>
+    <!-- Circle Image View used by profile avatar -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+
+    <!--Circle Page indicator-->
+
+    <declare-styleable name="ViewPagerIndicator">
+        <!-- Style of the circle indicator. -->
+        <attr name="vpiCirclePageIndicatorStyle" format="reference"/>
+        <!-- Style of the icon indicator's views. -->
+        <attr name="vpiIconPageIndicatorStyle" format="reference"/>
+        <!-- Style of the line indicator. -->
+        <attr name="vpiLinePageIndicatorStyle" format="reference"/>
+        <!-- Style of the title indicator. -->
+        <attr name="vpiTitlePageIndicatorStyle" format="reference"/>
+        <!-- Style of the tab indicator's tabs. -->
+        <attr name="vpiTabPageIndicatorStyle" format="reference"/>
+        <!-- Style of the underline indicator. -->
+        <attr name="vpiUnderlinePageIndicatorStyle" format="reference"/>
+    </declare-styleable>
+
+    <attr name="centered" format="boolean" />
+    <attr name="selectedColor" format="color" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="unselectedColor" format="color" />
+
+    <declare-styleable name="CirclePageIndicator">
+        <!-- Whether or not the indicators should be centered. -->
+        <attr name="centered" />
+        <!-- Color of the filled circle that represents the current page. -->
+        <attr name="fillColor" format="color" />
+        <!-- Color of the filled circles that represents pages. -->
+        <attr name="pageColor" format="color" />
+        <!-- Orientation of the indicator. -->
+        <attr name="android:orientation"/>
+        <!-- Radius of the circles. This is also the spacing between circles. -->
+        <attr name="radius" format="dimension" />
+        <!-- Whether or not the selected indicator snaps to the circles. -->
+        <attr name="snap" format="boolean" />
+        <!-- Color of the open circles. -->
+        <attr name="strokeColor" format="color" />
+        <!-- Width of the stroke used to draw the circles. -->
+        <attr name="strokeWidth" />
+        <!-- View background -->
+        <attr name="android:background"/>
+    </declare-styleable>
+
+
+
+    <!-- Tag Group-->
+    <declare-styleable name="TagGroup"><attr format="boolean" name="atg_isAppendMode"/><attr format="string" name="atg_inputHint"/><attr format="color" name="atg_borderColor"/><attr format="color" name="atg_textColor"/><attr format="color" name="atg_backgroundColor"/><attr format="color" name="atg_dashBorderColor"/><attr format="color" name="atg_inputHintColor"/><attr format="color" name="atg_inputTextColor"/><attr format="color" name="atg_checkedBorderColor"/><attr format="color" name="atg_checkedTextColor"/><attr format="color" name="atg_checkedMarkerColor"/><attr format="color" name="atg_checkedBackgroundColor"/><attr format="color" name="atg_pressedBackgroundColor"/><attr format="dimension" name="atg_borderStrokeWidth"/><attr format="dimension" name="atg_textSize"/><attr format="dimension" name="atg_horizontalSpacing"/><attr format="dimension" name="atg_verticalSpacing"/><attr format="dimension" name="atg_horizontalPadding"/><attr format="dimension" name="atg_verticalPadding"/></declare-styleable>
+    <declare-styleable name="Themes"><attr format="reference" name="tagGroupStyle"/></declare-styleable>
+    <!-- From: file:/D:/WorkSpace/AndroidStudioProjects/AndroidTagGroup/library/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="add_tag">Add Tag</string>
+    <!-- From: file:/D:/WorkSpace/AndroidStudioProjects/AndroidTagGroup/library/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">@string/add_tag</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">14sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <!-- CircleCheckbox -->
+    <declare-styleable name="CircleCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+
+</resources>
